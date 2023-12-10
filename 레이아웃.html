@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang = "ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>레이아웃 공부 css flex, grid</title>
+ 
+  </head>
+  <body>
+
+    <p>Grid는 행과 열 동시에 다룬다.</p>
+    <!-- Grid는 행과 열 동시에 다룸-->
+    <div style="display:grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr;">
+        <div style="background-color: rgb(226, 110, 43);">a</div>
+        <div style="background-color: rgb(198, 231, 154);">a</div>
+        <div style="background-color: rgb(238, 136, 136);">a</div>
+        <div style="background-color: rgb(161, 184, 228);">a</div>
+    </div>
+    <a href="https://studiomeal.com/archives/533"></a>
+    <br>
+    <p>Flex는 행과 또는 열을 다룬다. 기본은 row</p>
+    <!-- Flex는 행 또는 열을 다룸, 기본은 row-->
+    <div style="display:flex;">
+        <div style="background-color: rgb(226, 110, 43);">a</div>
+        <div style="background-color: rgb(198, 231, 154);">a</div>
+        <div style="background-color: rgb(238, 136, 136);">a</div>
+        <div style="background-color: rgb(161, 184, 228);">a</div>
+    </div>
+
+    <br>
+    <p>Flex는 열</p>
+    <!-- Flex 열로변경 -->
+    <div style="display:flex; flex-direction: column;" >
+        <div style="background-color: rgb(226, 110, 43);">a</div>
+        <div style="background-color: rgb(198, 231, 154);">a</div>
+        <div style="background-color: rgb(238, 136, 136);">a</div>
+        <div style="background-color: rgb(161, 184, 228);">a</div>
+    </div>
+    <p>flex 비율로 나누려면 item 부분에 flex를, px로 나누려면 flex-basis를 이용</p>
+    <p> flex 이용</p>
+    <!--flex 이용-->
+    <div style="display:flex;">
+        <div style="background-color: rgb(226, 110, 43); flex:2;">a</div>
+        <div style="background-color: rgb(198, 231, 154); flex:1;">a</div>
+    </div>
+    <p>flex-basis</p>
+    <div style="display:flex;">
+        <div style="background-color: rgb(226, 110, 43);">a</div>
+        <div style="background-color: rgb(198, 231, 154);">a</div>
+    </div>
+  </body> 
+ 
+</html>
