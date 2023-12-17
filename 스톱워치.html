@@ -9,18 +9,21 @@
             var stopButton = document.getElementById("stop");
             var display = document.getElementById("display");
             var startTime, timer;
+            
             startButton.onclick = start; // start 버튼 활성화
+            
             function start() {
                 startButton.onclick = null; // start 버튼 비활성화
                 stopButton.onclick = stop;  // stop 버튼 활성화
                 startTime = new Date();
                 // 0.01초마다 경과한 시간을 표기
-                tiemr = setInterval(function(){
+                timer = setInterval(function(){
                     var now = new Date();
                     //display에 경과한 시간 쓰기
                     display.innerHTML = ((now - startTime)/1000).toFixed(2);
                 }, 10);
             }
+
             function stop(){
                 clearInterval(timer); // 타이머 해제
                 startButton.onclick = start;    // start 버튼 활성화
